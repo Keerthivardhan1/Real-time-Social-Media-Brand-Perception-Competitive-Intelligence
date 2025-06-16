@@ -1,0 +1,30 @@
+{
+	"name": "Real time simulation",
+	"properties": {
+		"activities": [
+			{
+				"name": "Real Time Simulation",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 2,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/keerthivardhan.t@anblicks.com/Real Time Simulation Prod"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-06-16T10:38:25Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

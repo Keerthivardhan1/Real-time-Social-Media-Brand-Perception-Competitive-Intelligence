@@ -1,0 +1,59 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "part-00000-tid-7159836927163670230-fdb17744-31b9-4d98-9b18-3469a82076d1-575-1-c000.snappy.parquet",
+				"folderPath": "processed",
+				"container": "data"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Id",
+				"type": "INT32"
+			},
+			{
+				"name": "ProductId",
+				"type": "UTF8"
+			},
+			{
+				"name": "UserId",
+				"type": "UTF8"
+			},
+			{
+				"name": "ProfileName",
+				"type": "UTF8"
+			},
+			{
+				"name": "Score",
+				"type": "UTF8"
+			},
+			{
+				"name": "Time",
+				"type": "UTF8"
+			},
+			{
+				"name": "Summary",
+				"type": "UTF8"
+			},
+			{
+				"name": "Text",
+				"type": "UTF8"
+			},
+			{
+				"name": "Helpfulness",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

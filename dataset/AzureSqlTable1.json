@@ -1,0 +1,57 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "UserId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProfileName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Score",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Summary",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Text",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Helpfulness",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "ReviewTime",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ProductReviews"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

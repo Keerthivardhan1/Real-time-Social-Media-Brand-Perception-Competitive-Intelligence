@@ -1,0 +1,54 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "realtime_simulation.json",
+				"container": "data"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Id": {
+					"type": "integer"
+				},
+				"ProductId": {
+					"type": "string"
+				},
+				"UserId": {
+					"type": "string"
+				},
+				"ProfileName": {
+					"type": "string"
+				},
+				"HelpfulnessNumerator": {
+					"type": "integer"
+				},
+				"HelpfulnessDenominator": {
+					"type": "integer"
+				},
+				"Score": {
+					"type": "integer"
+				},
+				"Time": {
+					"type": "integer"
+				},
+				"Summary": {
+					"type": "string"
+				},
+				"Text": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

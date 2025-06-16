@@ -1,0 +1,58 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "PRODUCTID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "USERID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "PROFILENAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "SCORE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "SUMMARY",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "Text",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "HELPFULNESS",
+				"type": "FLOAT"
+			},
+			{
+				"name": "REVIEWTIME",
+				"type": "TIMESTAMP_NTZ"
+			}
+		],
+		"typeProperties": {
+			"schema": "PUBLIC",
+			"table": "PRODUCTREVIEWS"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,25 @@
+{
+	"name": "product review perception and analysis pipeline trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "product_review_perception_and_analysis",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2025-06-16T16:19:00",
+				"endTime": "2025-06-16T16:35:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

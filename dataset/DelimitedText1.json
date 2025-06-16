@@ -1,0 +1,65 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data.csv",
+				"container": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Id",
+				"type": "String"
+			},
+			{
+				"name": "ProductId",
+				"type": "String"
+			},
+			{
+				"name": "UserId",
+				"type": "String"
+			},
+			{
+				"name": "ProfileName",
+				"type": "String"
+			},
+			{
+				"name": "HelpfulnessNumerator",
+				"type": "String"
+			},
+			{
+				"name": "HelpfulnessDenominator",
+				"type": "String"
+			},
+			{
+				"name": "Score",
+				"type": "String"
+			},
+			{
+				"name": "Time",
+				"type": "String"
+			},
+			{
+				"name": "Summary",
+				"type": "String"
+			},
+			{
+				"name": "Text",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
