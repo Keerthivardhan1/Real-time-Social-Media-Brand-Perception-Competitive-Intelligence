@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "keerthivardhan"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"Snowflake1_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_sasUri": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0609-111523-etai625h"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "keerthivardhn-sqlserver.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "reviewsdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "kv"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "keerthivardhn-sqlserver.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "reviewsdb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "kv"
+		},
+		"Snowflake1_properties_typeProperties_database": {
+			"value": "REVIEWS_DB"
+		}
+	}
+}
